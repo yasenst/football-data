@@ -1,13 +1,12 @@
 package com.example.footballdata.repository;
 
-import com.example.footballdata.model.Fixture;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import java.util.List;
+import com.example.footballdata.model.Fixture;
 
 public interface FixtureRepository extends JpaRepository<Fixture, Long> {
     Page<Fixture> getAllByLeagueId(Long leagueId, Pageable pageable);

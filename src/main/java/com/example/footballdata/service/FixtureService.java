@@ -1,8 +1,9 @@
 package com.example.footballdata.service;
 
-import com.example.footballdata.model.Fixture;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+
+import com.example.footballdata.model.Fixture;
 
 public interface FixtureService {
     Page<Fixture> findAll(Pageable pageable);

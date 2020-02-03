@@ -1,13 +1,17 @@
 package com.example.footballdata.service;
 
-import com.example.footballdata.model.Fixture;
-import com.example.footballdata.model.Team;
-import com.example.footballdata.repository.FixtureRepository;
-import com.example.footballdata.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+
 import org.springframework.stereotype.Service;
+
+import com.example.footballdata.model.Fixture;
+import com.example.footballdata.model.Team;
+
+import com.example.footballdata.repository.FixtureRepository;
+import com.example.footballdata.repository.TeamRepository;
 
 @Service
 public class DefaultFixtureService implements FixtureService {

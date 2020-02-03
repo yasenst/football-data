@@ -1,10 +1,8 @@
 package com.example.footballdata.repository;
 
-import com.example.footballdata.model.Fixture;
-import com.example.footballdata.model.Team;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.footballdata.model.Team;
 
 import java.util.List;
 
